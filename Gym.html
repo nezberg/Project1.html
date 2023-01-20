@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take It Easy</title>
+</head>
+<style>
+    /*CSS Reset*/
+    body{
+        font-family:'Baloo Bhai',cursive;
+        margin:0px;
+        padding:0px;
+        background: url('abs-gcd329ba08_1920.jpg');
+        color: white;
+    }
+    /*they are block elements, so we need to make them inline to adjust in same line*/
+    .left{
+        display: inline-block;
+        /*border: 2px solid red;*/
+        position: absolute;
+        left: 20px;
+    }
+    .left img{
+        width: 109px;
+        filter: invert(93%);/*changes white to black and vice versa*/
+    }
+    /*.left div{
+        color:aqua;
+    }*/
+    .mid{
+        display: block;
+        width: 23%;
+        margin:12px auto;
+        /*border:2px solid green;*/
+    }
+    .right{
+        display: inline-block;
+        /*width: 15%;*/
+        /*border:2px solid red;*/
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+    .navbar{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        padding: 10px 5px;
+    }
+    .navbar li a{
+        color: white;
+    }
+    .navbar li a:hover{
+        color: grey;
+        display: inline-block;
+        text-decoration: underline;
+        text-decoration-color: grey;
+    }
+    .btn{
+        font-family:'Baloo Bhai',cursive;
+        margin: 26px 0px;
+        padding: 3px 4px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+    text-align: center;
+    display: block;
+    width: 250px;
+    padding 9px;
+    border: 2px solid black;
+    margin: 11px auto;
+    font-size: 18px;
+    border-radius: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display:block;
+    width:23%;
+    margin: auto;
+}
+</style>
+<body>
+    <header class="header">
+        <!-- For the logo -->
+        <div class="left">
+            <img src="gym-image2.jpg">
+            <!-- <div>Take It Easy</div> -->
+        </div>
+        <!-- For the navigation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- For the Drop Down menu -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym!</h1>
+        <form action="noaction.php"> <!-- We are adding action to refer to the backend -->
+            <div class="form-group">
+               <input type="text" name="" placeholder="Enter your name">  
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">  
+             </div>
+             <div class="form-group">
+                <input type="text" name="" placeholder="Enter your address">  
+             </div>
+             <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
